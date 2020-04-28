@@ -9,6 +9,7 @@
 .App .container .item {
   flex: 1;
   position: relative;
+  overflow: hidden;
 }
 
 .App .container .item img{
@@ -16,20 +17,19 @@
 }
 
 .App .container .item .overlay {
-  display: none;
+  display: flex;
   position: absolute;
   background-color:rgba(24,21,21,0.6);
-  bottom: -300px;
+  bottom: -30%;
   left: 0;
   width: 100%;
-  height: 30%;
+  height: 20%;
   transition: bottom ease 2s;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .App .container .item:hover .overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   bottom: 0;
 }
 
