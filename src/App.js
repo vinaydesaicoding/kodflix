@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieItem from './movieItem';
 import mementoCover from './images/memento.jpg';
 import americanPsychoCover from './images/americanPsycho.jpg';
 import theWolfOfWallStreetCover from './images/theWolfOfWallStreet.jpg';
@@ -13,30 +14,20 @@ function App() {
       <div>
         <h1>Welcome to Kodflix</h1>  
         <div className='container'> 
-          <div className='item'><img src={mementoCover}  alt='memento' />
-            <div className='overlay'><h2>Memento</h2></div>
-          </div>
-          <div className='item'><img src={americanPsychoCover} alt='americanPsycho' />
-          <div className='overlay'><h2>American Psycho</h2></div>
-          </div>
-          <div className='item'><img src={theWolfOfWallStreetCover} alt='theWolfOfWallStreet' />
-            <div className='overlay'><h2>The Wolf of Wall Street</h2></div>
-          </div>
+          <MovieItem title='Memento' image={mementoCover}/>
+          <MovieItem title='American Psycho' image={americanPsychoCover} />
+          <MovieItem title='The Wolf of Wall Street' image={theWolfOfWallStreetCover}/>
         </div> 
         <div className='container'>
-          <div className='item'><img src={inceptionCover} alt='inception' />
-            <div className='overlay'><h2>Inception</h2></div>
-          </div>
-          <div className='item'><img src={boratCover} alt='borat' />
-            <div className='overlay'><h2>Borat</h2></div>
-          </div>
-          <div className='item'><img src={thisIsSpinalTapCover} alt='thisIsSpinalTap' />
-            <div className='overlay'><h2>This is Spinal Tap</h2></div>
-          </div>
+          <MovieItem title='Inception' image={inceptionCover}/>
+          <MovieItem title='Borat' image={boratCover} />
+          <MovieItem title='This is Spinal Tap' image={thisIsSpinalTapCover}/>
         </div>
       </div>
     </div>   
   );
 }
+
+
 
 export default App;
