@@ -12,14 +12,14 @@ export default function Gallery() {
     <div>
       <h1>Welcome to Kodflix</h1>
       <div className='container'>
-        <MovieItem title='Memento' image={mementoCover} />
-        <MovieItem title='American Psycho' image={americanPsychoCover} />
-        <MovieItem title='The Wolf of Wall Street' image={theWolfOfWallStreetCover} />
+        <MovieItem id='memento' title='Memento' image={mementoCover} />
+        <MovieItem id='american-psycho' title='American Psycho' image={americanPsychoCover} />
+        <MovieItem id='the-wolf-of-wall-street' title='The Wolf of Wall Street' image={theWolfOfWallStreetCover} />
       </div>
       <div className='container'>
-        <MovieItem title='Inception' image={inceptionCover} />
-        <MovieItem title='Borat' image={boratCover} />
-        <MovieItem title='This is Spinal Tap' image={thisIsSpinalTapCover} />
+        <MovieItem id='inception' title='Inception' image={inceptionCover} />
+        <MovieItem id='borat' title='Borat' image={boratCover} />
+        <MovieItem id='this-is-spinal-tap' title='This is Spinal Tap' image={thisIsSpinalTapCover} />
       </div>
     </div>
   );
