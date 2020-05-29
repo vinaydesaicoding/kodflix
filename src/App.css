@@ -3,11 +3,15 @@
 }
 
 .App .container {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
 }
 
 .App .container .item {
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 450px; */
   position: relative;
   overflow: hidden;
 }
@@ -42,13 +46,3 @@
 }
 
 
-@media (max-width: 600px) {
-
-  .App .container {
-    flex-direction: column;
-  }
-
-  .App .container .item {
-    width: 100vw;
-  }
-};

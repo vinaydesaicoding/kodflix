@@ -15,8 +15,6 @@ export default function Gallery() {
         <MovieItem id='memento' title='Memento' image={mementoCover} />
         <MovieItem id='american-psycho' title='American Psycho' image={americanPsychoCover} />
         <MovieItem id='the-wolf-of-wall-street' title='The Wolf of Wall Street' image={theWolfOfWallStreetCover} />
-      </div>
-      <div className='container'>
         <MovieItem id='inception' title='Inception' image={inceptionCover} />
         <MovieItem id='borat' title='Borat' image={boratCover} />
         <MovieItem id='this-is-spinal-tap' title='This is Spinal Tap' image={thisIsSpinalTapCover} />
@@ -24,3 +22,4 @@ export default function Gallery() {
     </div>
   );
 }
+
