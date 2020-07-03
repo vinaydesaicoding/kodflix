@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import getGallery from './GetGallery.js';
+import getGallery from '../GetGallery.js';
+import './Details.css';
 
 export default class Details extends React.Component {
 
@@ -22,8 +23,17 @@ export default class Details extends React.Component {
             return <Redirect to='/not-found' />;
         } else {
             return (
-                <div>
+                <div className='Details'>
                     <h1> { this.state.movie.title } </h1>
+                    <div className='content'>
+                        <div className='synopsis'>
+                            { this.state.movie.synopsis } 
+                        </div>
+                        <img 
+                            className='image'
+                            src= {this.state.movie.image}
+                            alt= {this.state.movie.title} />
+                    </div>
                     <Link to='/'>Back to homepage</Link>
                 </div>
             )
